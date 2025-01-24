@@ -1,2 +1,3 @@
-output = 3 + 4 + 5 + 6
-print(output)
+import random
+
+print(random.random())
