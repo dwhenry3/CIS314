@@ -97,7 +97,7 @@ for key, value in x.items():
     print(f"{key}: {value}")
 
 print("Get Keys:", x.keys())
-print("Get Value:", x.get["instructor"])
+print("Get Value:", x.get("instructor"))
 
 x["room"] = "Snyder 227" # This adds a new key-value pair to the dictionary
 x.update({"roster":"13"}) # This does the same thing, but adds by way of appending a dictionary
@@ -105,3 +105,12 @@ for key, value in x.items():
     print(f"{key}: {value}")
 
 print("The same methods can be used to update existing information.")
+
+#x.pop() #This will fail because .pop() requires an argument
+x.pop("course")
+x.popitem() # This does not need an argument but will remove the last-inserted/updated key->value pair
+for key, value in x.items():
+    print(f"{key}: {value}")
+
+x.clear() # This will wipe out the contents of the dictionary
+del x # This will delete the entire variable from memory.
