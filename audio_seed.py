@@ -2,7 +2,7 @@ import random
 import hashlib
 from pydub import AudioSegment
 
-audio_data = AudioSegment.from_file("output.wav", format="wav")
+audio_data = AudioSegment.from_file("output3.wav", format="wav")
 samples = audio_data.get_array_of_samples()
 
 # Hash the audio data using SHA-256
