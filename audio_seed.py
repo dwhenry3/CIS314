@@ -11,6 +11,8 @@ for x in samples:
     hash_object.update(repr(x).encode())
 seed = int(hash_object.hexdigest()[:32], 16)  # extract 32-bit seed
 
+print(seed)
+'''
 # Set the seed for the PRNG
 random.seed(seed)
 
@@ -20,3 +22,4 @@ while x < 100:
   random_number = random.randint(0,10000)
   print(random_number)
   x+=1
+'''
