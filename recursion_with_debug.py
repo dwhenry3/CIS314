@@ -32,5 +32,5 @@ def merge(left, right):
 
     return merged
 
-hundred_small = [random.randint(1,65535) for _ in range(10)]
-sorted_arr = merge_sort(hundred_small)
+ten_small = [random.randint(1,65535) for _ in range(10)]
+sorted_arr = merge_sort(ten_small)
