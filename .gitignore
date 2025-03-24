@@ -1,0 +1,6 @@
+genAI/stack_overflow/
+genAI/bin.tf/
+genAI/bin.tf/variables/variables.index
+genAI/bin.tf/variables/variables.data-00000-of-00001
+genAI/bin.tf/saved_model.pb
+genAI/bin.tf/fingerprint.pb

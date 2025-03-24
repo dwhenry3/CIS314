@@ -157,6 +157,8 @@ int_test_ds = raw_test_ds.map(lambda x,y: (int_vectorize_layer(x), y))
 
 binary_model.export('bin.tf')
 
-loaded = tf.saved_model.load('bin.tf')
-#binary_model.predict(['How do you sort a list?'])
-loaded.serve(tf.constant(['How do you sort a list?'])).numpy()
+#binary_model.save("my_model.keras")
+
+#loaded = tf.saved_model.load('bin.tf')
+#loaded.predict(['How do you sort a list?'])
+#loaded.serve(tf.constant(['How do you sort a list?'])).numpy()
